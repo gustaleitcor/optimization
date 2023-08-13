@@ -13,9 +13,7 @@
 O objetivo é minimizar a soma das quantidades de resistores usados:
 
 $$
-\[
 \text{Minimizar} \quad \sum\_{i} y_i
-\]
 $$
 
 Sujeito a:
@@ -23,25 +21,19 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\[
 \sum*{i} \frac{1}{R_i} \cdot y_i \cdot R*{eq} = 1
-\]
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
 
 $$
-\[
 y_i \leq qtd_i, \quad \forall i
-\]
 $$
 
 As variáveis $\(y_i\)$ devem ser inteiros e não negativos:
 
 $$
-\[
 y*i \in \mathbb{Z}*{\geq 0}, \quad \forall i
-\]
 $$
 
 Essa modelagem garante que você está escolhendo a quantidade apropriada de cada tipo de resistor para atender ao valor de resistência equivalente desejado, enquanto respeita as quantidades disponíveis de resistores.
