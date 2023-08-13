@@ -1,6 +1,6 @@
 **Variáveis:**
 
-- Seja $\(y_i\)$ a quantidade de resistores do tipo $\(i\)$ a serem usados na combinação.
+- Seja $\(x_i\)$ a quantidade de resistores do tipo $\(i\)$ a serem usados na combinação.
 
 **Parâmetros:**
 
@@ -13,7 +13,7 @@
 O objetivo é minimizar a soma das quantidades de resistores usados:
 
 $$
-\text{Minimizar} \quad \sum\_{i} y_i
+\text{Minimizar} \quad \sum\_{i} x_i
 $$
 
 Sujeito a:
@@ -21,16 +21,16 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\sum*{i} \frac{1}{R_i} \cdot y_i \cdot R*{eq} = 1
+\sum*{i} \frac{1}{R_i} \cdot x_i \cdot R*{eq} = 1
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
 
 $$
-y_i \leq qtd_i, \quad \forall i
+x_i \leq qtd_i, \quad \forall i
 $$
 
-As variáveis $\(y_i\)$ devem ser inteiros e não negativos:
+As variáveis $\(x_i\)$ devem ser inteiros e não negativos:
 
 $$
 y*i \in \mathbb{Z}*{\geq 0}, \quad \forall i
