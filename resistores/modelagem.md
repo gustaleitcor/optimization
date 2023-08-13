@@ -21,7 +21,7 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{R\_{eq}\}
+\sum_{i=1}^{|R|} \frac{1}{R_i} \cdot x_{i} = \frac{1}{R\_{eq}\}
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
@@ -51,5 +51,5 @@ Em contraste com a modelagem de modulo único,
 **Modelagem com modulo único:**
 
 $$
-\sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{\text{Req}}
+\sum_{i=1}^{|R|} \frac{1}{R_i} \cdot x_{i} = \frac{1}{\text{Req}}
 $$
