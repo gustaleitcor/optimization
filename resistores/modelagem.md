@@ -21,7 +21,7 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\sum_{i} \frac{1}{R_i} \cdot x_i \cdot R_{eq} = 1
+\sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{\text{Req}}
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
