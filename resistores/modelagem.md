@@ -1,7 +1,53 @@
+**Variáveis:**
+
+- Seja \(y_i\) a quantidade de resistores do tipo \(i\) a serem usados na combinação.
+
+**Parâmetros:**
+
+- \(R_i\) é o valor de resistência do resistor do tipo \(i\).
+- \(q_i\) é a quantidade disponível do resistor do tipo \(i\).
+- \(R\_{eq}\) é o valor de resistência equivalente desejado.
+
+**Modelagem Matemática:**
+
+O objetivo é minimizar a soma das quantidades de resistores usados:
+
+\[
+\text{Minimizar} \quad \sum\_{i} y_i
+\]
+
+Sujeito a:
+
+1. A restrição para obter a resistência equivalente desejada:
+
+\[
+\sum*{i} \frac{1}{R_i} \cdot y_i \cdot R*{eq} = 1
+\]
+
+2. Restrições de quantidade de resistores disponíveis:
+
+\[
+y_i \leq q_i, \quad \forall i
+\]
+
+As variáveis \(y_i\) devem ser inteiros e não negativos:
+
+\[
+y*i \in \mathbb{Z}*{\geq 0}, \quad \forall i
+\]
+
+Essa modelagem garante que você está escolhendo a quantidade apropriada de cada tipo de resistor para atender ao valor de resistência equivalente desejado, enquanto respeita as quantidades disponíveis de resistores.
+
+Lembrando que a modelagem pode variar dependendo dos detalhes específicos do seu problema. Certifique-se de adaptar essa modelagem às suas necessidades exatas e à funcionalidade da biblioteca MIP que você está usando.
+
 Modelagem com multiplos modulos
 
 ```math
-\[
 \sum_{i=1}^{i \leq |M|} \left( \sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} \right)^{-1} = \text{Req}
-\]
+```
+
+Modelagem com modulo único
+
+```math
+\sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{\text{Req}}
 ```
