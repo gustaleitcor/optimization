@@ -1,10 +1,10 @@
 **Variáveis:**
 
-- Seja \(y_i\) a quantidade de resistores do tipo \(i\) a serem usados na combinação.
+- Seja $\(y_i\)$ a quantidade de resistores do tipo $\(i\)$ a serem usados na combinação.
 
 **Parâmetros:**
 
-- \(R_i\) é o valor de resistência do resistor do tipo \(i\).
+- $\(R_i\)$ é o valor de resistência do resistor do tipo \(i\).
 - \(q_i\) é a quantidade disponível do resistor do tipo \(i\).
 - \(R\_{eq}\) é o valor de resistência equivalente desejado.
 
