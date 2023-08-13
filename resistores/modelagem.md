@@ -43,7 +43,7 @@ Adicionalmente, proponho a modelagem do problema para multiplos modulos. No enta
 **Modelagem com multiplos modulos:**
 
 $$
-\sum_{i=1}^{i \leq |M|} \left( \sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} \right)^{-1} = \text{Req}
+\sum_{i=1}^{|M|} \left( \sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} \right)^{-1} = \text{Req}
 $$
 
 Em contraste com a modelagem de modulo único,
