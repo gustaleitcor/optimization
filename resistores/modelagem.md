@@ -33,7 +33,7 @@ $$
 As variáveis $\(x_i\)$ devem ser inteiros e não negativos:
 
 $$
-y*i \in \mathbb{Z}*{\geq 0}, \quad \forall i
+\[ y_i \in \mathbb{Z}_{\geq 0}, \quad \forall i \]
 $$
 
 Essa modelagem garante que você está escolhendo a quantidade apropriada de cada tipo de resistor para atender ao valor de resistência equivalente desejado, enquanto respeita as quantidades disponíveis de resistores.
