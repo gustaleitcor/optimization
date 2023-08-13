@@ -13,7 +13,7 @@
 O objetivo é minimizar a soma das quantidades de resistores usados:
 
 $$
-\text{Minimizar} \quad \sum\_{i} x_i
+\text{Minimizar} \quad \sum_{i=1}^{|R|} x_i
 $$
 
 Sujeito a:
@@ -21,7 +21,7 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{R\_{eq}\}
+\sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{R\_{eq}\}
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
@@ -43,7 +43,7 @@ Adicionalmente, proponho a modelagem do problema para multiplos modulos. No enta
 **Modelagem com multiplos modulos:**
 
 $$
-\sum_{i=1}^{i \leq |M|} \left( \sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} \right)^{-1} = \text{Req}
+\sum_{i=1}^{i \leq |M|} \left( \sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} \right)^{-1} = \text{Req}
 $$
 
 Em contraste com a modelagem de modulo único,
@@ -51,5 +51,5 @@ Em contraste com a modelagem de modulo único,
 **Modelagem com modulo único:**
 
 $$
-\sum_{j=1}^{j \leq |R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{\text{Req}}
+\sum_{j=1}^{|R|} \frac{1}{R_j} \cdot x_{ji} = \frac{1}{\text{Req}}
 $$
