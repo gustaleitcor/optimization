@@ -4,8 +4,8 @@
 
 **Parâmetros:**
 
-- $\(R_i\)$ é o valor de resistência do resistor de índice $\i\$.
-- $\(qtd_i\)$ é a quantidade disponível do resistor de índice $\i\$.
+- $\(R_i\)$ é o valor de resistência do resistor de índice $i$.
+- $\(qtd_i\)$ é a quantidade disponível do resistor de índice $i$.
 - $\(R\_{eq}\)$ é o valor de resistência equivalente desejado.
 
 **Modelagem Matemática:**
