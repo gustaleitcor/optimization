@@ -1,11 +1,11 @@
 **Variáveis:**
 
-- Seja $\(x_i\)$ a quantidade de resistores do tipo $\(i\)$ a serem usados na combinação.
+- Seja $\(x_i\)$ a quantidade de resistores de índice $\(i\)$ a serem usados na combinação.
 
 **Parâmetros:**
 
-- $\(R_i\)$ é o valor de resistência do resistor de índice $\(i\)$.
-- $\(qtd_i\)$ é a quantidade disponível do resistor de índice $\(i\)$.
+- $\(R_i\)$ é o valor de resistência do resistor de índice $\i\$.
+- $\(qtd_i\)$ é a quantidade disponível do resistor de índice $\i\$.
 - $\(R\_{eq}\)$ é o valor de resistência equivalente desejado.
 
 **Modelagem Matemática:**
@@ -21,7 +21,7 @@ Sujeito a:
 1. A restrição para obter a resistência equivalente desejada:
 
 $$
-\sum*{i} \frac{1}{R_i} \cdot x_i \cdot R*{eq} = 1
+\sum{i} \frac{1}{R_i} \cdot x_i \cdot R*{eq} = 1
 $$
 
 2. Restrições de quantidade de resistores disponíveis:
