@@ -1,40 +1,53 @@
 # Optimization Problem
 
-## Objective Function
+## Variáveis:
 
-Minimize the following sum:
-\[ \text{Objective} = \sum_{i=0}^{N} \sum_{j=0}^{n} x_{ij} \]
+- Seja \( x_{ij} \) a variável de decisão para os índices \( i \) e \( j \).
 
-## Subject to Constraints
+## Parâmetros:
 
-1. The sum of weighted variables is equal to \( W_t \):
-\[ \sum_{i=0}^{N} \sum_{j=0}^{n} \left( \frac{W_t}{2^i} \right) x_{ij} = W_t \]
+- \( N \): Limite superior para o índice \( i \).
+- \( n \): Limite superior para o índice \( j \).
+- \( W_t \): Peso total.
+- \( i_0 \): Limite inferior para o índice \( i \) na segunda restrição.
+- \( j_0 \): Parâmetro que define o intervalo para \( j \) na segunda restrição.
+- \( n_0 \): Parâmetro que define o intervalo para \( j \) na segunda restrição.
 
-2. For each \( j \) in the range \([2 \cdot j_0, 2^{n_0-n})\), the sum of \( x_{ij} \) from \( i = i_0 + 1 \) to \( N \) is equal to 0:
-\[ \sum_{i=i_0+1}^{N} x_{ij} = 0 \]
+## Modelagem Matemática
 
-3. The variables \( x_{ij} \) are bounded between 0 and 1:
-\[ 0 \leq x_{ij} \leq 1 \]
+### Objetivo
 
-## Variables
+Minimizar a soma das variáveis de decisão:
 
-- \( x_{ij} \): Decision variable for indices \( i \) and \( j \).
+$$
+\text{Minimizar} \quad \sum_{i=0}^{N} \sum_{j=0}^{n} x_{ij}
+$$
 
-## Parameters
+### Sujeito a
 
-- \( N \): Upper limit for the index \( i \).
-- \( n \): Upper limit for the index \( j \).
-- \( W_t \): Total weight.
-- \( i_0 \): Lower limit for the index \( i \) in the second constraint.
-- \( j_0 \): Parameter defining the range for \( j \) in the second constraint.
-- \( n_0 \): Parameter defining the range for \( j \) in the second constraint.
+1. A soma das variáveis ponderadas é igual a \( W_t \):
 
-## Problem Summary
+$$
+\sum_{i=0}^{N} \sum_{j=0}^{n} \left( \frac{W_t}{2^i} \right) x_{ij} = W_t
+$$
 
-This optimization problem aims to minimize the sum of decision variables \( x_{ij} \) under two constraints. The first constraint ensures that the weighted sum of \( x_{ij} \) equals a total weight \( W_t \). The second constraint ensures that for a specific range of \( j \), the sum of \( x_{ij} \) from \( i = i_0 + 1 \) to \( N \) is zero. All decision variables are bounded between 0 and 1.
+2. Para cada \( j \) no intervalo \([2 \cdot j_0, 2^{n_0-n})\), a soma de \( x_{ij} \) de \( i = i_0 + 1 \) a \( N \) é igual a 0:
 
-## Example
+$$
+\sum_{i=i_0+1}^{N} x_{ij} = 0
+$$
 
-An example will be provided here demonstrating the setup and solution of this problem using a specific optimization solver.
+3. As variáveis \( x_{ij} \) estão limitadas entre 0 e 1:
 
+$$
+0 \leq x_{ij} \leq 1
+$$
+
+## Resumo do Problema
+
+Este problema de otimização visa minimizar a soma das variáveis de decisão \( x_{ij} \) sob duas restrições. A primeira restrição garante que a soma ponderada de \( x_{ij} \) seja igual a um peso total \( W_t \). A segunda restrição garante que, para um intervalo específico de \( j \), a soma de \( x_{ij} \) de \( i = i_0 + 1 \) a \( N \) seja zero. Todas as variáveis de decisão estão limitadas entre 0 e 1.
+
+## Exemplo
+
+Um exemplo será fornecido aqui, demonstrando a configuração e a solução deste problema usando um solucionador de otimização específico.
 
