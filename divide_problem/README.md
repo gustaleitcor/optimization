@@ -34,7 +34,7 @@ $$
 2. Para cada \( j \) no intervalo \([2 \cdot j_0, 2^{n_0-n})\), a soma de \( x_{ij} \) de \( i = i_0 + 1 \) a \( N \) é igual a 0:
 
 $$
-\sum_{i=i_0+1}^{N} x_{ij} = 0
+\sum_{i=i_0}^{N} x_{ij} = 1
 $$
 
 3. As variáveis \( x_{ij} \) estão limitadas entre 0 e 1:
